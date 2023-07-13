@@ -1,6 +1,6 @@
 import express from "express";
 import morgan from "morgan";
-
+import cors from 'cors';
 import analisisRoutes from "./routes/analisis.routes.js";
 import indexRoutes from "./routes/index.routes.js";
 
@@ -14,6 +14,10 @@ app.use( express.static('public') );
 // Middlewares
 app.use(morgan("dev"));
 app.use(express.json());
+
+app.use(cors({
+  origin: '*'
+}));
 
 // Routes
 app.use("/", indexRoutes);
