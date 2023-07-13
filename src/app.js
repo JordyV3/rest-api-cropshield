@@ -6,6 +6,11 @@ import indexRoutes from "./routes/index.routes.js";
 
 const app = express();
 
+app.set('view engine', 'pug')
+app.set('views', './views')
+
+app.use( express.static('public') );
+
 // Middlewares
 app.use(morgan("dev"));
 app.use(express.json());

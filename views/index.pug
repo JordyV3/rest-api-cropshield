@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    link(rel="shortcut icon" href="/img/icon.ico")
+    <title>API | CROPSHIELD 🌱</title>
+</head>
+
+<body class="mx-auto container mt-10 px-2">
+    <header class="absolute inset-x-0 top-0 z-50">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+            <div class="flex lg:flex-1">
+                <a href="/" class="-m-1.5 p-1.5">
+                    <span class="sr-only">Your Company</span>
+                    <img class="h-8 w-auto " src="/img/icon.svg" alt="icono-cropshield">
+                </a>
+            </div>
+            <div class="flex lg:hidden">
+                <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 " id="menuHam">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="h-6 w-6 " fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+            <div id="nav" class="hidden lg:flex lg:gap-x-12">
+                <a href="/" class="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-500 ">SERVICIO REST - CROPSHIELD</a>
+            </div>
+            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                <a href="#" class="text-sm font-semibold leading-6 text-indigo-600 hover:text-indigo-500 cursor-pointer">Login</a>
+            </div>
+        </nav>
+    </header>
+    <div class="py-16 mx-4">
+        <div class="grid  pb-10 text-center">
+            <a href="https://rest-api-cropshield-production.up.railway.app/api/analisis" class="text-sm font-semibold leading-6 text-indigo-600 hover:text-indigo-500 cursor-pointer">
+                <code class="text-sm  sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-6">
+                    <span class="flex gap-4 text-center">
+                        <span class="shrink-0 text-gray-500"> $ </span>
+                        <span class="flex-1 text-center">
+                            <span class="text-yellow-500">https://api-cropshield.com/api/analisis </span>
+                        </span>
+                    </span>
+                    <svg class="shrink-0 h-5 w-5 transition text-gray-500 group-hover:text-white" xmlns="http://www.w3.org/2000/svg"viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path d="M8 2a1 1 0 000 2h2a1 1 0 100-2H8z"></path>
+                        <path d="M3 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v6h-4.586l1.293-1.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L10.414 13H15v3a2 2 0 01-2 2H5a2 2 0 01-2-2V5zM15 11h2a1 1 0 110 2h-2v-2z">
+                        </path>
+                    </svg>
+                </code>
+            </a>
+            //- <span class="text-center mt-10">Endpoint api CropShield</span>
+        </div>
+
+        <div class="grid pb-10">
+            <div class="grid grid-cols-12 gap-6">
+                <div class="grid grid-cols-12 col-span-12 gap-6 xxl:col-span-9">
+                    <div class="col-span-12 ">
+                        <div class="grid grid-cols-12 gap-6 ">
+                            <a class="transform  hover:scale-105 transition duration-300 bg-white border border-gray-200 rounded-lg col-span-12 sm:col-span-6 xl:col-span-3 intro-y bg-white" href="#">
+                                <div class="p-5">
+                                    <div class="flex justify-between">
+                                        img(src="/img/analisis.png", alt="icono" class="h-8 w-8")
+                                        <div class="bg-green-500 rounded-full h-6 px-2 flex justify-items-center text-white font-semibold text-sm">
+                                            <span class="flex items-center">100%</span>
+                                        </div>
+                                    </div>
+                                    <div class="ml-2 w-full flex-1">
+                                        <div>
+                                            div(class="whitespace-nowrap mt-4 font-bold text-gray-900 ") 552
+                                            <div class="whitespace-nowrap mt-2 font-light text-gray-900">Total de Análisis</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="transform  hover:scale-105 transition duration-300 bg-white border border-gray-200 rounded-lg col-span-12 sm:col-span-6 xl:col-span-3 intro-y bg-white" href="#">
+                                <div class="p-5">
+                                    <div class="flex justify-between">
+                                        img(src="/img/planta_saludable.png", alt="icono" class="h-8 w-8")
+                                        <div class="bg-yellow-500 rounded-full h-6 px-2 flex justify-items-center text-white font-semibold text-sm">
+                                            <span class="flex items-center">75.54 %</span>
+                                        </div>
+                                    </div>
+                                    <div class="ml-2 w-full flex-1">
+                                        <div>
+                                            <div class="whitespace-nowrap mt-4 font-bold text-gray-900">417</div>
+                                            <div class="whitespace-nowrap mt-2 font-light text-gray-900">Planta Saludable</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="transform  hover:scale-105 transition duration-300 bg-white border border-gray-200 rounded-lg col-span-12 sm:col-span-6 xl:col-span-3 intro-y bg-white" href="#">
+                                <div class="p-5">
+                                    <div class="flex justify-between">
+                                        img(src="/img/planta_enferma.png", alt="icono" class="h-8 w-8")
+                                        <div class="bg-red-500 rounded-full h-6 px-2 flex justify-items-center text-white font-semibold text-sm">
+                                            <span class="flex items-center">24.46 %</span>
+                                        </div>
+                                    </div>
+                                    <div class="ml-2 w-full flex-1">
+                                        <div>
+                                            <div class="whitespace-nowrap mt-4 font-bold text-gray-900">135</div>
+                                            <div class="whitespace-nowrap mt-2 font-light text-gray-900">Planta Enferma Trips</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="transform  hover:scale-105 transition duration-300 bg-white border border-gray-200 rounded-lg col-span-12 sm:col-span-6 xl:col-span-3 intro-y bg-white" href="#">
+                                <div class="p-5">
+                                    <div class="flex justify-between">
+                                        img(src="/img/grafico.png", alt="icono" class="h-8 w-8")
+                                        <div class="bg-gray-400 rounded-full h-6 px-2 flex justify-items-center text-white font-semibold text-sm">
+                                            <span class="flex items-center">100%</span>
+                                        </div>
+                                    </div>
+                                    <div class="ml-2 w-full flex-1">
+                                        <div>
+                                            <div class="whitespace-nowrap mt-4 font-bold text-gray-900">94.15 %</div>
+                                            <div class="whitespace-nowrap mt-2 font-light text-gray-900">Confianza de Predicciones</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-span-12 mt-5">
+                        <div class="grid gap-2 grid-cols-1 lg:grid-cols-2">
+                            <div class="bg-white border border-gray-200 rounded-lg p-4" id="chartline"></div>
+                            <div class="bg-white border border-gray-200 rounded-lg p-4" id="chartpie"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mx-auto w-full max-w-container px-4 sm:px-6 lg:px-8">
+        <div class="border-t border-slate-900/5 text-center">
+            <img class="h-8 w-auto mt-2" src="/img/icon.svg" style="margin: 0 auto;" alt="icono-cropshield">
+            <p class="mt-2 text-center text-sm leading-6 text-slate-500">© 2023 Jordy Vega. All rights reserved.</p>
+        </div>
+    </div>  
+block scripts
+    script(src="https://cdn.jsdelivr.net/npm/apexcharts") 
+    script(src="/js/data.js")
+    script(src="/js/scripts.js") 
+</body>
+</html>
