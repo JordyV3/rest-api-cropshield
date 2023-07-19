@@ -1,5 +1,5 @@
 import express from "express";
-import morgan from "morgan";
+// import morgan from "morgan";
 import cors from 'cors';
 import analisisRoutes from "./routes/analisis.routes.js";
 import indexRoutes from "./routes/index.routes.js";
@@ -11,7 +11,7 @@ app.set('views', './views')
 
 app.use( express.static('public') );
 
-app.use(morgan("dev"));
+// app.use(morgan("dev"));
 app.use(express.json());
 
 app.use(cors({
