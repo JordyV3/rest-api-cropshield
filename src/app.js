@@ -11,7 +11,6 @@ app.set('views', './views')
 
 app.use( express.static('public') );
 
-// Middlewares
 app.use(morgan("dev"));
 app.use(express.json());
 
@@ -19,7 +18,6 @@ app.use(cors({
   origin: '*'
 }));
 
-// Routes
 app.use("/", indexRoutes);
 app.use("/api", analisisRoutes);
 

@@ -1,17 +1,14 @@
-
 import { Router } from "express";
 import {
-    getAnalisi,
-    getAnalisis,
-    getAnalisiLimpios,
-    getAnalisisPuros
+    getAnalisisNumeroPlantasEnfermasPorSemana,
+    getAnalisisClaseId,
+    getAnalisisCombo
 } from "../controllers/analisis.controller.js";
 
 const router = Router();
 
-router.get("/analisis", getAnalisis);
-router.get("/analisis/:id", getAnalisi);
-router.get("/analisis-limpios", getAnalisiLimpios)
-router.get("/analisis-puros", getAnalisisPuros)
+router.get("/analisis-semana/:id", getAnalisisNumeroPlantasEnfermasPorSemana)
+router.get("/analisis-clase/:id", getAnalisisClaseId)
+router.get("/analisis-combo/:id", getAnalisisCombo)
 
 export default router;
