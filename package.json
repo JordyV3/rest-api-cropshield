@@ -2,13 +2,11 @@
   "name": "rest-api-cropshield",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon src/index.js",
-    "start": "node src/index.js",
-    "test": "NODE_OPTIONS=--experimental-vm-modules jest --coverage",
-    "pretest": "cross-env NODE_ENV=test jest --clearCache"
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
